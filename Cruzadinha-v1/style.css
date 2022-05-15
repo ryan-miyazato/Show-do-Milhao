@@ -5,13 +5,10 @@ body {
     height: 100vh;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #898989;
-    opacity: 1;
-    background-image: radial-gradient(circle at center center, #2f2f2f, #898989), repeating-radial-gradient(circle at center center, #2f2f2f, #2f2f2f, 14px, transparent 28px, transparent 14px);
-    background-blend-mode: multiply;
 }
 
 /* INDEX - Início */
+
 
 .inicio {
     width: 100%;
