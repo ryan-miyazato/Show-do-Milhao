@@ -1,0 +1,409 @@
+body {
+    margin: 0;
+    background-color: rgb(27, 28, 27);
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #898989;
+    opacity: 1;
+    background-image: radial-gradient(circle at center center, #2f2f2f, #898989), repeating-radial-gradient(circle at center center, #2f2f2f, #2f2f2f, 14px, transparent 28px, transparent 14px);
+    background-blend-mode: multiply;
+}
+
+/* INDEX - Início */
+
+.inicio {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(imgs/fundo_tela_inicial.jpeg);
+    background-size: cover;
+}
+
+.container {
+    width: 80%;
+}
+
+.inicio .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 180px;
+}
+
+.instrucoes {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    background-image: linear-gradient(#414141, #151515);
+    border: 2px solid rgb(135, 239, 135);
+    box-shadow: 0 0 12px rgba(80, 167, 80, 0.5);
+    margin-bottom: 24px;
+}
+
+.instrucoes span {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgb(135, 239, 135), rgb(61, 120, 61));
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 100%;
+}
+
+.botao {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgb(135, 239, 135), rgb(61, 120, 61));
+    box-shadow: 0 0 12px rgba(80, 167, 80, 0.5);
+    width: 150px;
+    padding: 12px;
+}
+
+/* INDEX - Fim */
+
+/* JOGO - Início */
+/* ESQUERDA - Começo*/
+
+.jogo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.esquerda {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: #2f2f2f;
+    opacity: 1;
+    background-image: linear-gradient(30deg, #0d0d0d 12%, transparent 12.5%, transparent 87%, #0d0d0d 87.5%, #0d0d0d), linear-gradient(150deg, #0d0d0d 12%, transparent 12.5%, transparent 87%, #0d0d0d 87.5%, #0d0d0d), linear-gradient(30deg, #0d0d0d 12%, transparent 12.5%, transparent 87%, #0d0d0d 87.5%, #0d0d0d), linear-gradient(150deg, #0d0d0d 12%, transparent 12.5%, transparent 87%, #0d0d0d 87.5%, #0d0d0d), linear-gradient(60deg, #0d0d0d77 25%, transparent 25.5%, transparent 75%, #0d0d0d77 75%, #0d0d0d77), linear-gradient(60deg, #0d0d0d77 25%, transparent 25.5%, transparent 75%, #0d0d0d77 75%, #0d0d0d77);
+    background-size: 38px 67px;
+    background-position: 0 0, 0 0, 19px 33px, 19px 33px, 0 0, 19px 33px;
+}
+
+.esquerda .container {
+    width: 98%;
+}
+
+.esquerda .logo {
+    margin-left: 1%;
+    position: absolute;
+    z-index: 10;
+}
+
+.cima {
+    height: 2%;
+}
+
+.btn_parar {
+    position: absolute;
+    left: 38%;
+    top: 50px;
+
+    width: fit-content;
+    height: fit-content;
+    padding: 12px;
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+    background-image: linear-gradient(#414141, #151515);
+    border: 2px solid rgb(135, 239, 135);
+    box-shadow: 0 0 12px rgba(0, 0, 0);
+
+}
+
+.borda {
+    border-top: 2px solid rgb(135, 239, 135);
+    border-right: 2px solid rgb(135, 239, 135);
+    border-bottom: 2px solid rgb(135, 239, 135);
+    box-shadow: 0 0 12px rgba(80, 167, 80, 0.5);
+    position: relative;
+    margin-top: 108px;
+    width: 110%;
+}
+
+.pergunta {
+    background-image: linear-gradient(rgb(135, 239, 135), rgb(61, 120, 61));
+    box-shadow: 0 0 12px rgba(80, 167, 80, 0.5);
+    padding: 24px;
+    margin: 8px 8px 8px 0px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    position: relative;
+}
+
+.alternativas {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    margin-top: 24px;
+    height: 324px;
+    width: 100%;
+}
+
+.alternativas .container {
+    width: 85%;
+    padding: 2%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.alternativas .container button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(94, 94, 255);
+    box-shadow: 0 0 12px rgba(0, 0, 0);
+    border-radius: 0px 0px 8px 8px;
+}
+
+.alternativas .container button div {
+    background-image: linear-gradient(#414141, #151515);
+    display: flex;
+    align-items: center;
+    height: 72px;
+    border-right: 8px solid rgb(194, 194, 255);
+    transform: skew(25deg);
+    padding: 0px 24px 0px 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.alternativas .container button:hover div {
+    background-image: linear-gradient(#d49845, #a8742a);
+    border-right: 8px solid #ffd865;
+}
+
+.alternativas .container button div h1 {
+    color: rgb(94, 94, 255);
+    transform: skew(-25deg);
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+.alternativas .container button:hover div h1 {
+    color: white;
+}
+
+.alternativas .container button h2 {
+    text-shadow: 2px 2px 2px rgb(65, 65, 176);
+    font-size: 2em;
+}
+
+.valores {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    top: 24px;
+}
+
+.valores .container {
+    padding: 2%;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.valores .container span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 29%;
+    margin-right: 1%;
+}
+
+.valores .container label {
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+}
+
+.errar,
+.parar,
+.acertar {
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    width: 80%;
+    padding: 12px;
+    border: 2px solid rgb(135, 239, 135);
+    background-image: linear-gradient(#414141, #151515);
+    box-shadow: 0 0 12px rgba(80, 167, 80, 0.5);
+}
+
+.filtro {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+.resposta_check {
+    padding: 24px;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+
+.certa {
+    background-image: linear-gradient(rgb(135, 239, 135), rgb(61, 120, 61));
+    box-shadow: 0 0 12px rgba(80, 167, 80, 0.5);
+    display: none;
+}
+
+.errada {
+    background-image: linear-gradient(rgb(247, 114, 114), rgb(203, 29, 29));
+    box-shadow: 0 0 12px rgba(254, 31, 31, 0.5);
+    display: none;
+}
+
+.resultado_final {
+    border: 2px solid rgb(135, 239, 135);
+    box-shadow: 0 0 12px rgba(80, 167, 80, 0.5);
+    background-image: linear-gradient(#414141, #151515);
+    padding: 8px;
+    color: white;
+
+    width: 30%;
+    height: 50%;
+    text-align: center;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    display: none;
+}
+
+.conteudo_final {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resultado_final div {
+    background-image: linear-gradient(rgb(135, 239, 135), rgb(61, 120, 61));
+    font-size: 48px;
+    font-weight: bold;
+    padding: 12px 0px 12px 0px ;
+    width: 100%;
+}
+
+.resultado_final h3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    width: 100%;
+    height: 64px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(94, 94, 255);
+    box-shadow: 0 0 12px rgba(0, 0, 0);
+    border-radius: 0px 0px 8px 8px;
+}
+
+.resultado_final h3 label {
+    font-size: larger;
+    width: 30%;
+    background-image: linear-gradient(#414141, #151515);
+    display: flex;
+    align-items: center;
+    height: 72px;
+    border-right: 8px solid rgb(194, 194, 255);
+    transform: skew(25deg);
+    padding: 0px 24px 0px 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.resultado_final h3 label span {
+    transform: skew(-25deg);
+}
+
+#questoes, #dinheiro {
+    text-shadow: 2px 2px 2px rgb(65, 65, 176);
+    font-size: 2em;
+    color:white;
+    font-weight: bold;
+}
+
+.btn_tela_inicio {
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 12px;
+    padding: 12px;
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+    background-image: linear-gradient(#414141, #151515);
+    border: 2px solid rgb(135, 239, 135);
+    box-shadow: 0 0 12px rgba(0, 0, 0);
+}
+
+
+/* ESQUERDA - Fim */
+/* DIREITA - Começo*/
+.direita {
+    width: auto;
+    background-color: black;
+    display: flex;
+
+}
+
+.direita img {
+    position: fixed;
+    height: 100%;
+    z-index: -1000;
+}
+
+/* DIREITA - Fim */
+/* JOGO - Fim */

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="mostrar()">Mostrar</button><br>
+    <span id="sp_a"></span><br><br>
+
+    <button onclick="aparecer()">Aparecer</button>
+
+    <span id="sp_b" style="display: none;"><h1>Olá mundo!</h1></span>
+    
+</body>
+</html>
+<script>
+    var respostas = [
+    ['a','b','c'], ['d','e','f'], ['g','h','i']
+    ]
+
+    var resp1 = ['a','b','c'];
+    var resp2 = ['d','e','f'];
+    var resp3 = ['g','h','i'];
+
+    function mostrar(){
+        sp_a.innerHTML = respostas[1][2];
+    }
+
+    function aparecer(){
+        sp_b.style.display = 'block';
+        const apagarTime = setTimeout(sumir, 2000);
+        const resultadoTime = setTimeout(resultado,2500);
+        function sumir() {
+            sp_b.style.display = 'none'
+        }
+    }
+
+    function resultado(){
+        alert('Resultado aqui')
+    }
+</script>
