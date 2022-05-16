@@ -768,62 +768,57 @@ function verificar(valor_btn) {
         else if (pergunta_tela.innerHTML == perguntas[4]) {
             val_errar += 500;
             val_parar += 1000;
-            val_acertar += 1000;
+            val_acertar += 5000;
         }
         else if (pergunta_tela.innerHTML == perguntas[5]) {
-            val_errar += 500;
-            val_parar += 1000;
-            val_acertar += 1000;
+            val_errar += 2500;
+            val_parar += 5000;
+            val_acertar += 10000;
         }
         else if (pergunta_tela.innerHTML == perguntas[6]) {
-            val_errar += 500;
-            val_parar += 1000;
-            val_acertar += 1000;
+            val_errar += 5000;
+            val_parar += 10000;
+            val_acertar += 10000;
         }
         else if (pergunta_tela.innerHTML == perguntas[7]) {
-            val_errar += 500;
-            val_parar += 1000;
-            val_acertar += 1000;
+            val_errar += 5000;
+            val_parar += 10000;
+            val_acertar += 10000;
         }
         else if (pergunta_tela.innerHTML == perguntas[8]) {
-            val_errar += 500;
-            val_parar += 1000;
-            val_acertar += 1000;
+            val_errar += 5000;
+            val_parar += 10000;
+            val_acertar += 10000;
         }
         else if (pergunta_tela.innerHTML == perguntas[9]) {
-            val_errar += 500;
-            val_parar += 1000;
-            val_acertar += 1000;
+            val_errar += 5000;
+            val_parar += 10000;
+            val_acertar += 50000;
         }
         else if (pergunta_tela.innerHTML == perguntas[10]) {
-            val_errar += 500;
-            val_parar += 1000;
-            val_acertar += 1000;
+            val_errar += 25000;
+            val_parar += 50000;
+            val_acertar += 100000;
         }
         else if (pergunta_tela.innerHTML == perguntas[11]) {
-            val_errar += 500;
-            val_parar += 1000;
-            val_acertar += 1000;
+            val_errar += 50000;
+            val_parar += 100000;
+            val_acertar += 100000;
         }
         else if (pergunta_tela.innerHTML == perguntas[12]) {
-            val_errar += 500;
-            val_parar += 1000;
-            val_acertar += 1000;
+            val_errar += 100000;
+            val_parar += 100000;
+            val_acertar += 100000;
         }
         else if (pergunta_tela.innerHTML == perguntas[13]) {
-            val_errar += 500;
-            val_parar += 1000;
-            val_acertar += 1000;
+            val_errar += 100000;
+            val_parar += 100000;
+            val_acertar += 100000;
         }
         else if (pergunta_tela.innerHTML == perguntas[14]) {
-            val_errar += 500;
-            val_parar += 1000;
-            val_acertar += 1000;
-        }
-        else if (pergunta_tela.innerHTML == perguntas[15]) {
-            val_errar += 500;
-            val_parar += 1000;
-            val_acertar += 1000;
+            val_errar += 100000;
+            val_parar += 100000;
+            val_acertar += 500000;
         }
 
         if (img_celso < 5) {
@@ -846,12 +841,17 @@ function verificar(valor_btn) {
             parar_tela.innerHTML = val_parar;
         }
         if (val_acertar >= 1000) {
-            acertar_tela.innerHTML = val_acertar / 1000 + ' Mil';
+            if(val_acertar == 1000000){
+                acertar_tela.innerHTML = '1 Milhão'; 
+            }
+            else {
+                acertar_tela.innerHTML = val_acertar / 1000 + ' Mil';
+            }
         }
         else {
             acertar_tela.innerHTML = val_acertar;
         }
-        
+
         if (vez < 16) {
             celso.src = `imgs/celso${img_celso}.jpg`
             pergunta_tela.innerHTML = perguntas[vez];
@@ -887,7 +887,12 @@ function resultado() {
     questoes.innerHTML = total_questoes + '/16';
     if (total_questoes == 16) {
         if (val_acertar >= 1000) {
-            dinheiro.innerHTML = val_acertar / 1000 + ' Mil';
+            if(val_acertar == 1000000){
+                dinheiro.innerHTML = '1 Milhão'; 
+            }
+            else {
+                dinheiro.innerHTML = val_acertar / 1000 + ' Mil';
+            }
         } else {
             dinheiro.innerHTML = val_acertar;
         }
