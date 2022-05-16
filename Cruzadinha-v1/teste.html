@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="teste.css">
 </head>
 <body>
     <button onclick="mostrar()">Mostrar</button><br>
@@ -12,11 +13,24 @@
 
     <button onclick="aparecer()">Aparecer</button>
 
-    <span id="sp_b" style="display: none;"><h1>Olá mundo!</h1></span>
+    <span id="sp_b" style="display: none;"><h1>Olá mundo!</h1></span><br>
+
+    <img src="imgs/celso1.jpg" alt="" id="img_a" style="display: none;">
     
 </body>
 </html>
 <script>
+
+setTimeout (revelar, 0);
+
+function revelar() {
+    img_a.style.display = 'block'
+    setTimeout (esconder, 2000);
+}
+function esconder() {
+    img_a.style.display = 'none'
+}
+
     var respostas = [
     ['a','b','c'], ['d','e','f'], ['g','h','i']
     ]

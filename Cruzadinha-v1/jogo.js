@@ -17,38 +17,6 @@ var perguntas = [
     '16. Tipo de processador que possui quatro núcleos'
 ];
 
-var respostas1 = ['CSS', 'CPU', 'PUC', 'UPC']
-
-var respostas2 = ['ULA', 'OLA', 'ALU', 'Calculadora']
-
-var respostas3 = ['RAM', 'Memory Bus', 'ROM', 'Registradores']
-
-var respostas4 = ['EPROM', 'Cache', 'ARM', 'RAM']
-
-var respostas5 = ['Data Bus', 'Memória de Massa', 'Slave Select (SS)', 'ROM']
-
-var respostas6 = ['Memória de Massa', 'Memory Bus', 'EPROM', 'EEPROM']
-
-var respostas7 = ['Memória de Massa', 'Flash', 'Slave Select (SS)', 'Cache']
-
-var respostas8 = ['Cache', 'DMA', 'CPU', 'Memória de Massa']
-
-var respostas9 = ['Address Bus', 'Memory Bus', 'DMA', 'Chip Select (CS)']
-
-var respostas10 = ['Chip Select (CS)', 'Address Bus', 'USB', 'HDMI']
-
-var resposas11 = ['Slave Select (SS)', 'SSD', 'Address Bus', 'Ônibus']
-
-var respostas12 = ['Data Bus', 'CPU', 'PC', 'Internet']
-
-var respostas13 = ['i3', 'i7', 'i5', 'i9']
-
-var respostas14 = ['i9', 'i7', 'i3', 'i5']
-
-var respostas15 = ['Dual Core', 'Double-Núcleo', 'Dois-Cores', '2-Núcleo-Dentro']
-
-var respostas16 = ['Quarteto de Cores', 'Quad Core', 'Core ao Quadrado', '4']
-
 var respostas = [
     // Respostas 1  [0]- Correto 2 [1]
     ['CSS', 'CPU', 'PUC', 'UPC'],
@@ -738,7 +706,7 @@ function verificar(valor_btn) {
 
 
     if (passar == true) {
-        filtro.style.display = 'block';
+        filtro.style.visibility = 'visible';
         resposta_certa.style.display = 'block';
 
         setTimeout(esconder, 1500);
@@ -865,7 +833,7 @@ function verificar(valor_btn) {
         }
     }
     if (passar == false) {
-        filtro.style.display = 'block';
+        filtro.style.visibility = 'visible';
         resposta_errada.style.display = 'block';
 
         setTimeout(esconder, 1500);
@@ -876,13 +844,13 @@ function verificar(valor_btn) {
 
 }
 function esconder() {
-    filtro.style.display = 'none';
+    filtro.style.visibility = 'hidden';
     resposta_certa.style.display = 'none';
     resposta_errada.style.display = 'none';
 }
 
 function resultado() {
-    filtro.style.display = 'block';
+    filtro.style.visibility = 'visible';
     resultado_final.style.display = 'block';
     questoes.innerHTML = total_questoes + '/16';
     if (total_questoes == 16) {
@@ -906,7 +874,7 @@ function resultado() {
 }
 
 function errar() {
-    filtro.style.display = 'block';
+    filtro.style.visibility = 'visible';
     resultado_final.style.display = 'block';
     questoes.innerHTML = total_questoes + '/16';
 
