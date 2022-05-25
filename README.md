@@ -8,3 +8,5 @@ Instruções do Jogo
 3. Cada questão tem 4 alternativas, sendo apenas 1 delas correta.
 4. Para cada questão certa, você ganha dinheiro (aumenta com o nível).
 5. Termina o jogo se você acertar todas as questões, errar ou parar.
+
+Código não refracionado, focado na funcionalidade.
